@@ -29,7 +29,6 @@ namespace granary { namespace smp {
 
 /// Defines the type protocol for an RCU-protected data structure.
 #define RCU_PROTOCOL(type_name, ...) \
-    template <> \
     RCU_GENERIC_PROTOCOL((), type_name, (), #__VA_ARGS__)
 
 
